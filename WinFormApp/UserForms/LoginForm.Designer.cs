@@ -72,6 +72,7 @@
             this.BtnLogin.TabIndex = 2;
             this.BtnLogin.Text = "登 录";
             this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
             // 
             // LoginForm
             // 

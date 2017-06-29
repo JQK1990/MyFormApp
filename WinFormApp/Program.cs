@@ -19,7 +19,14 @@ namespace WinFormApp
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            //执行登录
+            LoginForm login = new LoginForm();
+            var result = login.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                Application.Run(new MainForm());
+            }
+            // Application.Run(new LoginForm());
         }
     }
 }
